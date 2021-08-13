@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- 
+   ACCESSIBILITY WITH JAVASCRIPT
+
+      create a class name 'no-js' that will show the containers that javascript hides.
+      If the user has javascript activated, remove that class name.
+-->
+<html lang="en" class="no-js">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Kenua">
+   <title>Tabs</title>
+   <!--GOOGLE FONTS-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <!--BOOTSTRAP ICONS-->
+   <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+   <!--CUSTOM-->
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <main class="container-xl p-3 px-xl-0 py-xl-6">
+      <!--TABS BUTTON-->
+      <div class="tabs">
+         <div id="tab__buttons-container" class="tabs__button-container d-flex">
+            <a href="#description" class="tab__button tab__button--selected flex-grow-1 flex-xl-grow-0 bg-transparent border-0 px-3 px-md-5 py-3 m-0 text-uppercase text-center text-body text-spaced text-decoration-none quicksand">Description</a>
+            <a href="#products" class="tab__button flex-grow-1 flex-xl-grow-0 bg-transparent border-0 px-3 px-md-5 py-3 m-0 text-uppercase text-center text-body text-spaced text-decoration-none quicksand">Products</a>
+            <a href="#contact" class="tab__button flex-grow-1 flex-xl-grow-0 bg-transparent border-0 px-3 px-md-5 py-3 m-0 text-uppercase text-center text-body text-spaced text-decoration-none quicksand">Contact</a>
+         </div>
+         <div class="tabs__arrow text-end fs-4"><i class="bi bi-chevron-compact-right text-dark"></i></div>
+      </div>
+      <!--TABS CONTENT-->
+      <article>
+         <!--FIRST-->
+         <section id="description" class="tab-content container-fluid bg-white p-4 tab-content--show">
+            <div class="row">
+               <div class="col-lg-4">
+                  <picture class="tab-content__img-container">
+                     <source media="(max-width: 899px)" srcset="images/guy-s.jpg">
+                     <source media="(min-width: 900px)" srcset="images/guy.jpg">
+                     <img src="images/guy.jpg" alt="Guy" class="tab-content__img img-fluid">
+                  </picture>
+               </div>
+               <div class="col-lg-8 d-flex flex-column justify-content-between">
+                  <ul class="list-unstyled ms-3 my-4 my-md-0">
+                     <li class="d-flex align-items-center"><i class="bi bi-check text-secondary fs-1 lh-1"></i><p class="m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></li>
+                     <li class="d-flex align-items-center"><i class="bi bi-check text-secondary fs-1 lh-1"></i><p class="m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></li>
+                     <li class="d-flex align-items-center"><i class="bi bi-check text-secondary fs-1 lh-1"></i><p class="m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></li>
+                     <li class="d-flex align-items-center"><i class="bi bi-check text-secondary fs-1 lh-1"></i><p class="m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></li>
+                     <li class="d-flex align-items-center"><i class="bi bi-check text-secondary fs-1 lh-1"></i><p class="m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></li>
+                  </ul>
+                  <div class="d-grid d-md-block">
+                     <button class="quicksand btn btn-secondary text-spaced text-black text-uppercase rounded-0 px-4 fs-5">Learn More</button>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--SECONDS-->
+         <section id="products" class="tab-content container-fluid bg-white p-4 tab-content--hidden">
+            <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic similique necessitatibus, delectus officiis repellat aliquam voluptates sunt ducimus quos, dicta illo perferendis nemo doloribus minus voluptas deserunt voluptate expedita vitae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic similique necessitatibus, delectus officiis repellat aliquam voluptates sunt ducimus quos, dicta illo perferendis nemo doloribus minus voluptas deserunt voluptate expedita vitae. dicta illo perferendis nemo doloribus minus voluptas deserunt voluptate expedita vitae.</p>
+         </section>
+         <!--THIRD-->
+         <section id="contact" class="tab-content container-fluid bg-white p-4 tab-content--hidden">
+            <h2 class="fs-3 quicksand quicksand--3">Be The First To Review This Product!</h2>
+            <p class="my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic similique necessitatibus, delectus officiis repellat.</p>
+            <div class="d-grid d-md-block">
+               <button class="quicksand btn btn-secondary text-black text-spaced text-uppercase rounded-0 px-4 fs-5">Write Product Review</button>
+            </div>
+         </section>
+      </article>
+   </main>
+   <script src="scripts/no-js.js"></script>
+   <script src="scripts/tabs.js"></script>
+</body>
+</html>

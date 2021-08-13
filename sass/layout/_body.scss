@@ -1,0 +1,5 @@
+@use '../custom';
+
+body {
+   background-color: custom.$gray-300;
+}

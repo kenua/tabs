@@ -1,0 +1,17 @@
+{
+  "name": "tabs",
+  "version": "1.0.0",
+  "description": "tabs wa website with tabs and tolltips\u001b[D\u001b[D\u001b[D\u001b[D\u001b[o\u001b[F\u001b[D\u001b[B\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass -w sass/styles.scss:css/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kenua",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.2",
+    "bootstrap-icons": "^1.5.0"
+  }
+}

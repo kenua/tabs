@@ -1,0 +1,7 @@
+.tab__button {
+   transition: background-color 300ms ease-in-out;
+
+   &--selected {
+      background-color: white!important;
+   }
+}

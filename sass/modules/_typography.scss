@@ -1,0 +1,17 @@
+.quicksand {
+   font-family: 'Quicksand', sans-serif;
+   
+   // CREATE DIFFERENT CLASSES FOR DIFFERENT FONT-WEIGHT VALUES
+   $bold-values: 300, 400, 500, 600, 700;
+   $prefix: 1;
+   @each $bold in $bold-values {
+      &--#{$prefix} {
+         font-weight: $bold;
+      }
+      $prefix: $prefix + 1;
+   }
+}
+
+.text-spaced {
+   letter-spacing: 2px;
+}
