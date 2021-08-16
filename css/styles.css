@@ -12735,7 +12735,7 @@ body {
   animation: tab-fade-in 700ms ease-in-out 1 forwards;
 }
 .tab-content--fade-out {
-  animation: tab-fade-in 700ms ease-in-out 1 forwards;
+  animation: tab-fade-out 700ms ease-in-out 1 forwards;
 }
 .tab-content--hidden {
   display: none !important;

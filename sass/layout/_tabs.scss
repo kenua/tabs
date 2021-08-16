@@ -43,7 +43,7 @@
    }
 
    &--fade-out {
-      animation: tab-fade-in #{$animation-values};
+      animation: tab-fade-out #{$animation-values};
    }
 
    // useless rules

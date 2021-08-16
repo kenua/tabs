@@ -24,15 +24,18 @@ tabButtonsContainer.addEventListener('click', e => {
 
       // # unselect previous tab content and button
       currentTabButton.classList.remove('tab__button--selected');
-      currentTabContent.classList.remove('tab-content--show');
-      currentTabContent.classList.add('tab-content--hidden');
+      currentTabContent.classList.remove('tab-content--fade-in');
+      currentTabContent.classList.add('tab-content--fade-out');
+
+      console.log(currentTabContent);
 
       // # select current tab content and button
       target.classList.add('tab__button--selected');
       currentTabButton = target;
       for (let i = 0; i < tabContentNodes.length; i++) {
          if ('#'+tabContentNodes[i].id === id) {
-            tabContentNodes[i].classList.add('tab-content--show');
+            tabContentNodes[i].classList.remove('tab-content--fade-out');
+            tabContentNodes[i].classList.add('tab-content--fade-in');
             currentTabContent = tabContentNodes[i];
             break;
          }
