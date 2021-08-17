@@ -1,9 +1,11 @@
 .no-js {
-   #products {
-      display: block!important;
+   .tab__button {
+      background-color: white!important;
    }
 
-   #contact {
-      display: block!important;
+   .tab-content {
+      position: initial!important;
+      z-index: 1!important;
+      opacity: 1!important;
    }
 }

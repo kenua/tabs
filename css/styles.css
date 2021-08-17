@@ -12690,11 +12690,13 @@ textarea.form-control-lg {
   background-color: white !important;
 }
 
-.no-js #products {
-  display: block !important;
+.no-js .tab__button {
+  background-color: white !important;
 }
-.no-js #contact {
-  display: block !important;
+.no-js .tab-content {
+  position: initial !important;
+  z-index: 1 !important;
+  opacity: 1 !important;
 }
 
 body {
